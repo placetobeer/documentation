@@ -158,7 +158,7 @@ A user can switch between the groups he or she is a member of. The system offers
 
 | **SRS**  | Software Requirements Specification |
 
-| **JSON** | JavaScript Object Notation          |
+| **VM** | Virtual Machine          |
 
 | **API**  | Application Programming Interface   |
 
@@ -270,10 +270,19 @@ LUCIE
 
 
 ### 3.3 Reliability
-PATRICK
+The general availability should be at least 95%. This can be achieved by start and monitoring scripts:
+- Once a day, ideally when there is the least traffic, the whole application should be restarted.
+- If a component crashes, it should also be restarted automatically. However, if this happens several times in a row(e.g. 5 times), the restart attempts should be stopped and the systemadmin should be informed (e.g. via email).
+- In general, all start and restart activities and the general output of the application should be logged. This will help the systemadmin to find out more quickly what the problem is in case of a fatal error.
+
+Since the frontend, backend and database are all expected to run on the same system, communication problems between the systems are eliminated.
 
 ### 3.4 Performance
-PATRICK
+The response time should be kept as short as possible. It is not yet possible to give exact details, the application should still approach the average 3.5 ms. However, since all components run on the same virtual machine (VM), the latencies between the systems can be estimated to be close to zero.
+
+The total memory management should be able to store up to 1000 users and 100 groups. The actual system throughput for simultaneous use should be 100 users.
+
+These values are initial estimates. During the deployment phase and the testing of the actual system, it will become clear to what extent the resources provided can cope with the requirements.
 
 ### 3.5 Supportability
 TOM
@@ -294,13 +303,13 @@ tbd
 LUCIE
 
 #### 3.9.2 Hardware Interfaces
-tbd
+(n/a)
 
 #### 3.9.3 Software Interfaces
 TOM
 
 #### 3.9.4 Communications Interfaces
-PATRICK
+The web application will run on a single VM, with its own memory and hardware. Therefore, there are no exact interfaces to be defined.
 
 ### 3.10 Licensing Requirements
 tbd

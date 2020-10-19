@@ -189,10 +189,11 @@ A user can switch between the groups he or she is a member of. The system offers
 
 | [GitHub](https://github.com/placetobeer)                                                              | 19/10/2020 |
 
+<!--
 | [Spring Boot](n/a)                                                                                    | (n/a)      |
 
 | [ReactJS](https://reactjs.org/)                                                                       | (n/a)      |
-
+-->
 | [Use Case Diagram](https://github.com/placetobeer/documentation/blob/master/PlaceToBeer%20UCD.png)    | 19/10/2020 |
 
 

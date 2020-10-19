@@ -158,8 +158,9 @@ A user can switch between the groups he or she is a member of. The system offers
 
 | **SRS**  | Software Requirements Specification |
 
-| **VM** | Virtual Machine          |
+| **VM**   | Virtual Machine                     |
 
+<!--
 | **API**  | Application Programming Interface   |
 
 | **MTBF** | Mean Time Between Failures          |
@@ -173,7 +174,7 @@ A user can switch between the groups he or she is a member of. The system offers
 | **FAQ**  | Frequently Asked Questions          |
 
 | **REST** | Representational State Transfer     |
-
+-->
 
 
 ### 1.4 References
@@ -184,15 +185,15 @@ A user can switch between the groups he or she is a member of. The system offers
 
 | ----------------------------------------------------------------------------------------------------- | ---------- |
 
-| [Blog](https://flashcardcommunity.wordpress.com/)                                                     | 17/10/2018 |
+| [Blog](https://placetobeer475840703.wordpress.com/)                                                   | 19/10/2020 |
 
-| [GitHub](https://github.com/phoenixfeder/fc-com/)                                                     | 17/10/2018 |
+| [GitHub](https://github.com/placetobeer)                                                              | 19/10/2020 |
 
-| [Spring Boot](https://spring.io/projects/spring-boot)                                                 | 19/10/2018 |
+| [Spring Boot](n/a)                                                                                    | (n/a)      |
 
-| [ReactJS](https://reactjs.org/)                                                                       | 19/10/2018 |
+| [ReactJS](https://reactjs.org/)                                                                       | (n/a)      |
 
-| [Use Case Diagram](https://github.com/phoenixfeder/fc-com/blob/master/FlashCardCommunityUseCases.png) | 21/10/2018 |
+| [Use Case Diagram](https://github.com/placetobeer/documentation/blob/master/PlaceToBeer%20UCD.png)    | 19/10/2020 |
 
 
 
@@ -263,10 +264,10 @@ In the webapp you can create and manage groups with different users. All users s
 
 ### 3.1 Functionality
 Until december the following usecases are planned to be implemented:
-LUCIE
+tbd
 
 ### 3.2 Usability
-LUCIE
+tbd
 
 
 ### 3.3 Reliability
@@ -285,7 +286,7 @@ The total memory management should be able to store up to 1000 users and 100 gro
 These values are initial estimates. During the deployment phase and the testing of the actual system, it will become clear to what extent the resources provided can cope with the requirements.
 
 ### 3.5 Supportability
-TOM
+tbd
 
 ### 3.6 Design Constraints
 tbd
@@ -300,13 +301,13 @@ tbd
 
 
 #### 3.9.1 User Interfaces
-LUCIE
+tbd
 
 #### 3.9.2 Hardware Interfaces
 (n/a)
 
 #### 3.9.3 Software Interfaces
-TOM
+tbd
 
 #### 3.9.4 Communications Interfaces
 The web application will run on a single VM, with its own memory and hardware. Therefore, there are no exact interfaces to be defined.
@@ -321,4 +322,4 @@ tbd
 tbd
 
 ## 4. Supporting Information
-TOM
+tbd

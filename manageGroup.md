@@ -1,14 +1,14 @@
-﻿# 1 Manage Group
+﻿# 1. Manage Group
 
 ## 1.1 Brief Description
 Manage group covers the creation, reading, updating and deleting of a group (CRUD).
 
-# 2 Flow of Events
+# 2. Flow of Events
 ## 2.1 Basic Flow
 
 
 ### 2.1.1 Activity Diagram
-
+![](https://github.com/placetobeer/documentation/blob/master/manageGroupUML.png)
 ### 2.1.2 Mock-up
 
 ### 2.1.3 Narrative
@@ -57,17 +57,16 @@ Feature: new operation
 ## 2.2 Alternative Flows
 (n/a)
 
-# 3 Special Requirements
+# 3. Special Requirements
 (n/a)
 
-# 4 Preconditions
-## 4.1 Login
-The user has to be logged in to the system.
+# 4. Preconditions
+tbd
 
-# 5 Postconditions
+# 5. Postconditions
 (n/a)
  
-# 6 Extension Points
+# 6. Extension Points
 (n/a)
 
 

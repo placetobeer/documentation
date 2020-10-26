@@ -5,13 +5,14 @@ Manage group covers the creation, reading, updating and deleting of a group (CRU
 
 
 # 2. Flow of Events
+![Flow of Events CRUD](https://github.com/placetobeer/documentation/blob/master/use_cases/manage_group/flow_of_event_CRUD.png)
 ## 2.1 Create
 * User clicks on "create group" button
 * User fills the "create group" page - title, adding members (optional)
 - User clicks on "create" button and will be forwarded to the group's hubpage
 - User clicks on "cancel" button and will be sent back to the page he or she visited before
 ### 2.1.1 Activity Diagram
-![](https://github.com/placetobeer/documentation/blob/master/manageGroupUML.png)
+![Create Group](https://github.com/placetobeer/documentation/blob/master/use_cases/manage_group/create_group.png)
 ### 2.1.2 Mock-up
 ##### Group navigation bar
 ![Group navigation bar](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/groupNavigationBar.png)
@@ -42,6 +43,7 @@ Manage group covers the creation, reading, updating and deleting of a group (CRU
 - User fills the form with the person's email - the system checks if the email is already registered or the without an account
 - User clicks on "invite" button and will be sent back to the "group settings" page - the system sends an invitation email
 ### 2.3.1 Activity Diagram
+![Add Member](https://github.com/placetobeer/documentation/blob/master/use_cases/manage_group/add_member.png)
 ### 2.3.2 Mock-up
 Mock-ups for group settings same as mock-ups for read view (compare 2.1.2).
 

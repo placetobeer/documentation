@@ -10,7 +10,7 @@ The right to delete a group is reserved to members of the group with the role 'o
 - owner clicks on "group settings" button
 - owner clicks on "delete group" button and will be sent back to the front page - this action will delete the group entity
 ### 2.1.1 Activity Diagram
-![](https://github.com/placetobeer/documentation/blob/master/manageGroupUML.png)
+![](https://github.com/placetobeer/documentation/blob/master/use_cases/manage_group_delete_group/delete_group.png)
 ### 2.1.2 Mock-up
 #### groupsettings - owner 
 This view includes the delete button (right top).

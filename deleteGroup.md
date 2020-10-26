@@ -1,15 +1,14 @@
-﻿# 1. Manage Group
+﻿# 1. Delete Group
 
 ## 1.1 Brief Description
-Manage group covers the creation, reading, updating and deleting of a group (CRUD). But not all use cases of the CRUD 'manage group' can be fullfilled by every role. Therefore we decided to seperate the delete part and one update use case for which both require the 'admin' role at least. The update use case covers the possiblity to invite new members. Further changes in the entity are preserved to the 'owner' and 'admin' role.
+Delete Group is the "Delete" - part of the CRUD "manage Group".
+The right to delete a group is reserved to members of the group with the role 'owner'.
 
 
 # 2. Flow of Events
-## 2.1 Create
-* User clicks on "create group" button
-* User fills the "create group" page - title, adding members (optional)
-- User clicks on "create" button and will be forwarded to the group's hubpage
-- User clicks on "cancel" button and will be sent back to the page he or she visited before
+## 2.1 Basic Flow
+- owner clicks on "group settings" button
+- owner clicks on "delete group" button and will be sent back to the front page - this action will delete the group entity
 ### 2.1.1 Activity Diagram
 ![](https://github.com/placetobeer/documentation/blob/master/manageGroupUML.png)
 ### 2.1.2 Mock-up
@@ -57,25 +56,9 @@ Feature: new operation
     And I receive a "error" message
 ```
 
-## 2.2 Read
-- User clicks on "group settings" button
-- User can see the name of the group, the descripiton, the defined settings, and the list of group members
-- User clicks on "cancel" button and will be sent back to the page he or she visited before
-### 2.2.1 Activity Diagram
-### 2.1.2 Mock-up
-### 2.1.3 Narrative
 
-## 2.3 Update
-- User clicks on "group settings" button
-- User clicks on "Edit" button next to the group name to type in a new group name
-- User clicks on "add member" button
-- User fills the form with the person's email - the system checks if the email is already registered or the without an account
-- User clicks on "invite" button and will be sent back to the "group settings" page - the system sends an invitation email
-### 2.3.1 Activity Diagram
-### 2.3.2 Mock-up
-### 2.3.3 Narrative
 
-## 2.4 Alternative Flows
+## 2.2 Alternative Flows
 (n/a)
 
 # 3. Special Requirements

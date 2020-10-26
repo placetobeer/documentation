@@ -13,49 +13,9 @@ Manage group covers the creation, reading, updating and deleting of a group (CRU
 ### 2.1.1 Activity Diagram
 ![](https://github.com/placetobeer/documentation/blob/master/manageGroupUML.png)
 ### 2.1.2 Mock-up
-
+![Group navigation bar](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/groupNavigationBar.png)
+![Create group](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/createGroup.png)
 ### 2.1.3 Narrative
-```gherkin
-Feature: new operation
-
-  As a signed in user
-  i want to create a new operation
-  and provide additional information regarding my intentions
-  in order to find willing helpers.
-
-  Background:
-    And I am on the homepage
-
-  Scenario: open new operation dialog
-    Given I am signed in with username "USER" and password "PASSWORD"
-    And I am on the "main" page
-    When I press the "new operation" button
-    Then I am on the "new operation" page
-
-  Scenario: enter valid data and save the operation
-    Given I am signed in with username "USER" and password "PASSWORD"
-    And I am on the "new operation" page
-    When I enter "operation XY" in the field "title"
-    And I enter "Karlsruhe" in the field "location"
-    And I enter "01.01.2018" in the field "date"
-    And I enter "public description" in the field "public_descripion"
-    And I enter "private description" in the field "private_description"
-    And I press the "save" button
-    Then I am on the "details" page
-    And I receive a "success" message
-
-  Scenario: enter invalid data and save the operation
-    Given I am signed in with username "USER" and password "PASSWORD"
-    And I am on the "new operation" page
-    When I enter "operation XY" in the field "title"
-    And I enter "Karlsruhe" in the field "location"
-    And I enter "no date" in the field "date"
-    And I enter "" in the field "public_descripion"
-    And I enter "" in the field "private_description"
-    And I press the "save" button
-    Then I am on the "new operation" page
-    And I receive a "error" message
-```
 
 ## 2.2 Read
 - User clicks on "group settings" button
@@ -63,6 +23,9 @@ Feature: new operation
 - User clicks on "cancel" button and will be sent back to the page he or she visited before
 ### 2.2.1 Activity Diagram
 ### 2.1.2 Mock-up
+![Group settings - member view](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/groupsettings.png)
+![Group settings - admin view](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/groupsettings-admin.png)
+![Group settings - owner view](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/groupsettings-owner.png)
 ### 2.1.3 Narrative
 
 ## 2.3 Update
@@ -73,6 +36,9 @@ Feature: new operation
 - User clicks on "invite" button and will be sent back to the "group settings" page - the system sends an invitation email
 ### 2.3.1 Activity Diagram
 ### 2.3.2 Mock-up
+Mock-ups for group settings same as mock-ups for read view (compare 2.1.2).
+
+![Add Member Pop-Up](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/addMember.png)
 ### 2.3.3 Narrative
 
 ## 2.4 Alternative Flows

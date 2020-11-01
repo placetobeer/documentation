@@ -18,6 +18,9 @@ Manage group covers the creation, reading, updating and deleting of a group (CRU
 ![Group navigation bar](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/groupNavigationBar.png)
 ##### Create group
 ![Create group](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/createGroup.png)
+##### Create group - error input
+![create group error](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/createGroupError.png)
+
 ### 2.1.3 Narrative
 
 ## 2.2 Read

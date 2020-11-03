@@ -114,6 +114,25 @@ Feature: Update Group
        | project.placetobeer@gmail.com |
 ```
 
+```gherkin
+Feature: Update Group
+  As a ADMIN
+  I want to update a group entity I am a member of
+
+  Scenario Outline: add member with admin role
+    Given I opened page "groupSettings"
+    And I am logged in as a member of the group
+    When I click button "addMember"
+    When I enter <email address> in the input "newMember"
+    And I check the checkbox "addAsAdmin"
+    And I click button "confirmAddMember"
+    Then <email address> receives an invitation email (for this group entity)
+
+    Examples:
+      | email address |
+      | project.placetobeer@gmail.com |
+      ```
+
 ## 2.4 Alternative Flows
 (n/a)
 

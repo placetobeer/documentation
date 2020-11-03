@@ -98,7 +98,7 @@ Feature: Update Group
   
     Examples:  
       | new name |  
-       | name2 |  
+      | name2 	 |  
   
   
  Scenario Outline: add member successfully  
@@ -110,8 +110,8 @@ Feature: Update Group
     Then <email address> receives an invitation email (for this group entity)  
   
     Examples:  
-      | email address |  
-       | project.placetobeer@gmail.com |
+      | email address 				  |
+      | project.placetobeer@gmail.com |
 ```
 
 ```gherkin
@@ -129,9 +129,10 @@ Feature: Update Group
     Then <email address> receives an invitation email (for this group entity)
 
     Examples:
-      | email address |
+      | email address 				  | 
       | project.placetobeer@gmail.com |
-      ```
+      
+```
 
 ## 2.4 Alternative Flows
 (n/a)

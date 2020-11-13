@@ -34,12 +34,12 @@ Feature: Delete Group
     Then It should show the "group was deleted" message
     When I click on the ok button
     Then It should close the popup
-    And It should show the hubpage of <other group> group
+    And It should show the placeholder hubpage
 
 
     Examples:
-      | to delete group | other group         |
-      | study-buddies   | bratis-kartoffeln   |
+      | to delete group |
+      | study-buddies   |
       
 ```
 

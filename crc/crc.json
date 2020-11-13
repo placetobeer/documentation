@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Group",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      ""
+    ],
+    "collaborators": [
+      ""
+    ]
+  },
+  {
+    "name": "Role (Enum)",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      ""
+    ],
+    "collaborators": [
+      "OWNER",
+      "ADMIN",
+      "MEMBER"
+    ]
+  },
+  {
+    "name": "User",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      ""
+    ],
+    "collaborators": [
+      ""
+    ]
+  },
+  {
+    "name": "Membership",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Invite new User to Group"
+    ],
+    "collaborators": [
+      "User",
+      "Role"
+    ]
+  },
+  {
+    "name": "Proposal",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      ""
+    ],
+    "collaborators": [
+      "ProposalTyp"
+    ]
+  },
+  {
+    "name": "ProposalType (Enum)",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      ""
+    ],
+    "collaborators": [
+      ""
+    ]
+  },
+  {
+    "name": "Rating",
+    "superclasses": "",
+    "subclasses": "VisitedRating, UnvisitedRating",
+    "type": 1,
+    "responsibilities": [
+      "created"
+    ],
+    "collaborators": [
+      "User",
+      "Proposal"
+    ]
+  },
+  {
+    "name": "Rating Service",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "generate list",
+      "generate suggestion Proposal"
+    ],
+    "collaborators": [
+      "Rating"
+    ]
+  },
+  {
+    "name": "Group Service",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "CRUD"
+    ],
+    "collaborators": [
+      "Group"
+    ]
+  },
+  {
+    "name": "Proposal Service",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "CRUD"
+    ],
+    "collaborators": [
+      "Proposal"
+    ]
+  },
+  {
+    "name": "SuggestionFilter",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      ""
+    ],
+    "collaborators": [
+      "ProposalType",
+      "Group"
+    ]
+  },
+  {
+    "name": "UnvisitedRating",
+    "superclasses": "Rating",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      ""
+    ],
+    "collaborators": [
+      ""
+    ]
+  },
+  {
+    "name": "VisitedRating",
+    "superclasses": "Rating",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      ""
+    ],
+    "collaborators": [
+      ""
+    ]
+  },
+  {
+    "name": "AccountService",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "CRUD",
+      "log in",
+      "log out"
+    ],
+    "collaborators": [
+      "User"
+    ]
+  }
+]

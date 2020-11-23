@@ -34,7 +34,7 @@ tbd
 ### 8.2 Layers
 tbd
 ## 9. Data View
-optional
+![Backend class diagram](https://github.com/placetobeer/ptb-documentation/blob/master/classDiagram.png)
 ## 10. Size and Performance
 tbd
 

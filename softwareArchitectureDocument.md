@@ -34,7 +34,13 @@ tbd
 ### 8.2 Layers
 tbd
 ## 9. Data View
+#### Backend class diagram
 ![Backend class diagram](https://github.com/placetobeer/ptb-documentation/blob/master/classDiagram.png)
+#### Database schema
+##### Entity Relationship Model
+![ERM](https://github.com/placetobeer/ptb-documentation/blob/master/DBMS/groupSystem.png)
+##### Relational Database Model
+![rDBM](https://github.com/placetobeer/ptb-documentation/blob/master/DBMS/groupSystem_rDBM.png)
 ## 10. Size and Performance
 tbd
 

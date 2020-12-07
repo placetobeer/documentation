@@ -28,7 +28,7 @@ tbd
 n/a
 
 ## 7. Deployment View
-![Deployment View](https://github.com/placetobeer/ptb-documentation/blob/master/SAD/softwareArchitectureDocument.md)
+![Deployment View](https://github.com/placetobeer/ptb-documentation/blob/master/SAD/deployment View.png)
 ## 8. Implementation View
 ### 8.1 Overview
 ### 8.2 Layers

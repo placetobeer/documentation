@@ -67,7 +67,7 @@ For the frontend we use Angular so no extra MVC-tools are needed.
 (n/a)
 ## 9. Data View
 #### Backend class diagram
-![Backend class diagram](https://github.com/placetobeer/ptb-documentation/blob/master/classDiagram.png)
+![Backend class diagram](https://github.com/placetobeer/ptb-documentation/blob/master/SAD/classDiagrams.png)
 #### Database schema
 ##### Entity Relationship Model
 ![ERM](https://github.com/placetobeer/ptb-documentation/blob/master/DBMS/groupSystem.png)

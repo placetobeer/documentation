@@ -54,9 +54,7 @@ For the frontend we use Angular so no extra MVC-tools are needed.
 ## 4. Use Case View 
 ![Overall use case diagramm](https://github.com/placetobeer/ptb-documentation/blob/master/PlaceToBeer%20UCD.png)
 ## 5. Logical View
-### 5.1 Overview
-### 5.2 Architecturally Significant Design Packages
-tbd
+![MVC-with-classes](https://github.com/placetobeer/ptb-documentation/blob/master/SAD/MVC-Ptb.png)
 ## 6. Process View
 (n/a)
 

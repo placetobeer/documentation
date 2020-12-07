@@ -40,9 +40,16 @@ The document applies to the project PlaceToBeer. Detailed information about the 
 In the following chapters different views on the project are described by the help of several diagrams. It contains the architectural, use case, logical, deployment and data view. 
 
 ## 2. Architectural Representation
-tbd
+This project's architecture is based on the MVC - Pattern. Both Spring in the back-end and Angular in the front-end are structured in the following way:
+![Model View Controller](https://github.com/placetobeer/ptb-documentation/blob/master/SAD/MVC-schema-overview.png) 
+[Source](https://www.techyourchance.com/wp-content/uploads/2015/06/MVC_MVP.png)
+
+Thereby the back-end's controller has access on the database and the back-end's View represents the whole front-end (which is a MVC itself).
 ## 3. Architectural Goals and Constraints 
-tbd
+-Back-end
+For the back-end the framework of our choice is Spring Boot, which does support all aspects of MVC (whereby the controllers are included in Spring Web). To access the H2 - database we are using Spring JPA and String Security is planned to manage the account system. 
+-Front-end
+For the frontend we use Angular so no extra MVC-tools are needed.
 ## 4. Use Case View 
 ![Overall use case diagramm](https://github.com/placetobeer/ptb-documentation/blob/master/PlaceToBeer%20UCD.png)
 ## 5. Logical View

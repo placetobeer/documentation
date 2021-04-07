@@ -232,7 +232,7 @@ Each user has the possibilty to create groups. The user can then invite already 
 
 ##### UCS
 - [CRUD manage group](https://github.com/placetobeer/documentation/blob/master/manageGroup.md)
-- delete group 
+- [delete group](deleteGroup.md)
 - update group (kick member)
 - CRUD manage group memberships
 

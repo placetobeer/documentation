@@ -22,6 +22,7 @@ Manage group covers the creation, reading, updating and deleting of a group (CRU
 ![create group error](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/createGroupError.png)
 
 ### 2.1.3 Narrative
+Click [here](https://github.com/placetobeer/ptb-cucumber/blob/master/target/test-classes/features/createGroup.feature) to see in code!
 ```gherkin
 Feature: Create group  
   As a USER  
@@ -83,6 +84,7 @@ Mock-ups for group settings same as mock-ups for read view (compare 2.1.2).
 ##### Add member pop-up
 ![Add Member Pop-Up](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/addMember.png)
 ### 2.3.3 Narrative
+Click [here](https://github.com/placetobeer/ptb-cucumber/blob/master/target/test-classes/features/updateGroup.feature) to see in code!
 ```gherkin
 Feature: Update Group  
   As a MEMBER  

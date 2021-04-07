@@ -17,6 +17,7 @@ This view includes the delete button (right top).
 
 ![](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/groupsettings-owner.png)
 ### 2.1.3 Narrative
+Click [here](https://github.com/placetobeer/ptb-cucumber/blob/master/target/test-classes/features/deleteGroup.feature) to see in code!
 ```gherkin
 Feature: Delete Group
   As a owner of a group

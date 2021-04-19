@@ -148,8 +148,10 @@ tbd
 # 5. Postconditions
 (n/a)
  
-# 6. Extension Points
-(n/a)
+# 6. Function Points
+FP = 76,5
+
+![enter image description here](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/function-points/manage-group-fp.png)![enter image description here](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/function-points/fp-table2.png)
 
 
 

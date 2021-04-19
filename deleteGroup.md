@@ -56,8 +56,11 @@ tbd
 # 5. Postconditions
 (n/a)
  
-# 6. Extension Points
-(n/a)
+# 6. Function Points
+FP = 21,6
+
+![enter image description here](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/function-points/delete-fp.png)
+![enter image description here](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/function-points/fp-table2.png)
 
 
 

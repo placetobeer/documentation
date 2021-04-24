@@ -25,7 +25,10 @@
 ### 2.3.1 Activity Diagram
 
 ### 2.3.2 Mock-up
+![addMember](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use_cases/ui-mockups/addMember.png)
 
+
+![remaining invitations](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use_cases/ui-mockups/remainingInvitations.png)
 ### 2.3.3 Narrative
 
 ## 2.4 Alternative Flows

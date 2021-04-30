@@ -1,38 +1,58 @@
-﻿# 1. Manage Group memberships
+﻿# 1. CR(U)D Manage Group memberships
 
 ## 1.1 Brief Description
-This use case is all about managing users related to a certain group. Each membership defines the user and the group in question and additionally describes the role the user plays in the group. As the update and delete use cases can only be performed by group members with role "admin" or higher, we decided to cover them in extra use cases 
-TODO: put in links for use cases "grant/ revoke admin role" and "kick member"here
+This CR(U)D is all about managing users related to a certain group. Each membership defines the user and the group in question and additionally describes the role the user plays in the group. As the update use case can only be performed by group members with role "admin" or higher this is not a complete CRUD. The update use case and the possibility to kick members, are outsourced in the following files:
+- [manage admin roles](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/manage_group_memberships/manageAdminRole.md)
+- [kick member](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/manage_group_memberships/KickMember.md)
 
 # 2. Flow of Events
 
 ## 2.1 Create
-- User_1 clicks on "group settings" button
-- User_1 clicks on "add member to group" button
-- User_1 enters the to be invited user's email and role
-- User_1 clicks on "invite" button and creates an invitation for User_2
-- User_2 receives an invitation
-- User_2 clicks on "accept" button and becomes a member of the inviting group
+A user can invite new members to a group. 
+- user_1 clicks on button "group settings" -> opens group settings popup 
+- user_1 clicks on button "add member to group"
+- user_1 enters the to be invited user's email and role
+- user_1 clicks on button "send invitation" and creates an invitation for user_2
+- two possibilites:
+	- user_2 *registered*: in the group navigation bar in the remaining invitation section the new invitation will be added and user_2 has the possiblity to accept or decline the invitation
+	- user_2 *not registered* yet: receives an invitation via Email to register and join the group
+
+- if user_2 accepts the initation he or she becomes a member of the created group
 
 ### 2.1.1 Activity Diagram
 
 ### 2.1.2 Mock-up
+![group settings](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/groupSettings_complete.png)
+
+![addMember](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/addMember.png)
+
+![remaining invitations](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/remainingInvitations.png)
 
 ### 2.1.3 Narrative
 
 ## 2.2 Read
-- User clicks on "group settings" button
-- User sees the list of all group members with their assigned roles
+A user can see the group members.
+- user clicks on button "group settings" -> opens group settings popup 
+- user sees the list of all group members with their assigned roles and a list with the pending invitations
 ### 2.2.1 Activity Diagram
 
-### 2.1.2 Mock-up
+### 2.2.2 Mock-up
 
-### 2.1.3 Narrative
+![group settings](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/groupSettings_complete.png)
 
-![addMember](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use_cases/ui-mockups/addMember.png)
+### 2.2.3 Narrative
 
+## 2.3 Delete
+A user can leave a group.
+-   user clicks on button "group settings"  -> opens group settings popup 
+- user clicks on button "leave group" -> confirmation popup 
 
-![remaining invitations](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use_cases/ui-mockups/remainingInvitations.png)
+### 2.3.1 Activity Diagram
+
+### 2.3.2 Mock-up
+![group settings](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/groupSettings_complete.png)
+
+### 2.3.3 Narrative
 
 ## 2.4 Alternative Flows
 (n/a)

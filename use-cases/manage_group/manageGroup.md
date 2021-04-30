@@ -12,7 +12,7 @@ Manage group covers the creation, reading, updating and deleting of a group (CRU
 - User clicks on "create" button and will be forwarded to the group's hubpage
 - User clicks on "cancel" button and will be sent back to the page he or she visited before
 ### 2.1.1 Activity Diagram
-![Create Group](https://github.com/placetobeer/documentation/blob/master/use_cases/manage_group/create_group.png)
+![Create Group](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/manage_group/create_group.png)
 ### 2.1.2 Mock-up
 ##### Group navigation bar
 ![Group navigation bar](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/groupNavigationBar.png)

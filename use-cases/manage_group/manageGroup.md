@@ -5,7 +5,7 @@ Manage group covers the creation, reading, updating and deleting of a group (CRU
 
 
 # 2. Flow of Events
-![Flow of Events CRUD](https://github.com/placetobeer/documentation/blob/master/use_cases/manage_group/flow_of_event_CRUD.png)
+![Flow of Events CRUD](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/manage_group/flow_of_event_CRUD.png)
 ## 2.1 Create
 * User clicks on "create group" button
 * User fills the "create group" page - title, adding members (optional)

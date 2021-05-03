@@ -196,7 +196,7 @@ In the webapp you can create and manage groups with different users. All users s
 - Language: Kotlin
 - IDE: IntellJ
 - Testing: JUnit4
-- Database: tbd
+- Database: H2
 
 
 
@@ -233,8 +233,9 @@ Each user has the possibilty to create groups. The user can then invite already 
 ##### UCS
 - [CRUD manage group](https://github.com/placetobeer/documentation/blob/master/manageGroup.md)
 - [delete group](deleteGroup.md)
-- update group (kick member)
-- CRUD manage group memberships
+- [manage admin role](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/manage_group_memberships/manageAdminRole.md)
+- [kick member (update group membership)](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/manage_group_memberships/KickMember.md)
+- [CR(U)D manage group memberships](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/manage_group_memberships/manageGroupMemberships.md)
 
 #### 3.1.3 Rating system:
 Each group member should be able to add locations to the rating list. The rating list contains every proposal ready to be rated. It is devided into two sublists:
@@ -245,6 +246,10 @@ The rating workflow starts with the possibility to add a proposal. During this p
 After the rating process described above they are moved to the corresponding best-of list. The **best-of unvisited proposals** list offers to mark proposals as "already visited". If done so, the proposal returns to the **rating list** but will now appear in the **unvisited proposals** list.
 
 The whole dashboard can be filtered by the activity of the proposal.
+
+##### UCS
+- [create proposal](https://github.com/placetobeer/ptb-documentation/tree/master/use-cases/create_proposal)
+- [rate proposal](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/rate_proposal/rateProposal.md)
 
 #### 3.1.4 Suggestion generation system
 This system can be used by a group to automatically generate a suggestion depending on the ratings. Any member can initialize this process. To personalize the results to the groups preferences filters can be used to select specific kinds of activities. Moreover it is possible to decide between visited and unvisited proposals.

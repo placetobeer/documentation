@@ -248,7 +248,7 @@ After the rating process described above they are moved to the corresponding bes
 The whole dashboard can be filtered by the activity of the proposal.
 
 ##### UCS
-- [create proposal](https://github.com/placetobeer/ptb-documentation/tree/master/use-cases/create_proposal)
+- [create proposal](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/create_proposal/createProposal.md)
 - [rate proposal](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/rate_proposal/rateProposal.md)
 
 #### 3.1.4 Suggestion generation system

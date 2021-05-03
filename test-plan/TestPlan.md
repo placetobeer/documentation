@@ -319,7 +319,7 @@ n/a
 
 ## 11. Iteration Milestones
 
-We want to keep over tbd% code coverage.
+We want to keep over 90% code coverage.
 
 ## 12. Risks, Dependencies, Assumptions, and Constraints
 <!--

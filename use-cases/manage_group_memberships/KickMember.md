@@ -1,4 +1,4 @@
-﻿# 1. Kick member
+﻿# 1. Kick member (Update group membership)
 
 ## 1.1 Brief Description
 In the group settings popup an admin and the owner have the right to kick a member from the group. Then the membership will be deleted.

@@ -5,8 +5,13 @@ In the group settings popup an admin and the owner have the right to kick a memb
 
 # 2. Flow of Events
 ## 2.1 Basic Flow
-
+user must be of role "admin" or higher
+- user clicks on button "group settings" -> opens group settings popup
+- user sees the list of all group members with their assigned roles
+- user clicks on member with a role lower than user's
+- user clicks on "kick member" button -> selected member is removed from the group
 ### 2.1.1 Activity Diagram
+![kickMember](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/manage_group_memberships/activityDiagrams/kick_member)
 
 ### 2.1.2 Mock-up
 **Group settings popup - admin view**

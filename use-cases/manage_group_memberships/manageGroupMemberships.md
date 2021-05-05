@@ -20,7 +20,7 @@ A user can invite new members to a group.
 - if user_2 accepts the initation he or she becomes a member of the created group
 
 ### 2.1.1 Activity Diagram
-
+![addMember](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/manage_group_memberships/activityDiagrams/add_member)
 ### 2.1.2 Mock-up
 ![group settings](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/groupSettings_complete.png)
 
@@ -35,6 +35,7 @@ A user can see the group members.
 - user clicks on button "group settings" -> opens group settings popup 
 - user sees the list of all group members with their assigned roles and a list with the pending invitations
 ### 2.2.1 Activity Diagram
+![readMember](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/manage_group_memberships/activityDiagrams/read_member)
 
 ### 2.2.2 Mock-up
 
@@ -48,6 +49,7 @@ A user can leave a group.
 - user clicks on button "leave group" -> confirmation popup 
 
 ### 2.3.1 Activity Diagram
+![leave_group](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/manage_group_memberships/activityDiagrams/leave_group)
 
 ### 2.3.2 Mock-up
 ![group settings](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/groupSettings_complete.png)

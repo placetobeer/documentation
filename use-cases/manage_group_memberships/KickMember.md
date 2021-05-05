@@ -11,7 +11,7 @@ user must be of role "admin" or higher
 - user clicks on member with a role lower than user's
 - user clicks on "kick member" button -> selected member is removed from the group
 ### 2.1.1 Activity Diagram
-![kickMember](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/manage_group_memberships/activityDiagrams/kick_member)
+![kickMember](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/manage_group_memberships/activityDiagrams/kick_member.png)
 
 ### 2.1.2 Mock-up
 **Group settings popup - admin view**

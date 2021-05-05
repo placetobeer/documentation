@@ -13,7 +13,7 @@ user must be owner of target group
     - selected member of role *"member"*: user clicks on "grant admin role" button -> selected member becomes "admin" of group
     - selected member of role *"admin"*: user clicks on "revoke admin role" button -> selected member becomes "member" of group
 ### 2.1.1 Activity Diagram
-![manageAdmin](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/manage_group_memberships/activityDiagrams/grant_admin)
+![manageAdmin](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/manage_group_memberships/activityDiagrams/grant_admin.png)
 
 ### 2.1.2 Mock-up
 **Group settings popup - admin view**

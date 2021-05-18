@@ -54,6 +54,18 @@ For the frontend we use Angular so no extra MVC-tools are needed.
 ## 4. Use Case View 
 ![Overall use case diagramm](https://github.com/placetobeer/ptb-documentation/blob/master/PlaceToBeer%20UCD.png)
 ## 5. Logical View
+### 5.1 Overview
+#### Frontend
+In the frontend we seperate between entities, components and services. The entities represent data objects. The components display these data objects and handle the there transitions. The services fill the objects with the current data of the backend or the user inputs. 
+
+#### Backend
+todo: add description here
+
+### 5.2 Architecturally Significant Design Packages
+#### Frontend
+todo: add frontend class diagram here with marked state design pattern
+
+#### Backend
 ![MVC-with-classes](https://github.com/placetobeer/ptb-documentation/blob/master/SAD/MVC-Ptb.png)
 ## 6. Process View
 (n/a)

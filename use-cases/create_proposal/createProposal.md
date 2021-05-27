@@ -8,6 +8,11 @@
 ### 2.1.1 Activity Diagram
 
 ### 2.1.2 Mock-up
+![create-proposal-popup](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/createProposal.png)
+
+![empty-rating-list](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/emptyRatingList.png)
+
+![rating-list-proposals](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/ratingListWithProposals.png)
 
 ### 2.1.3 Narrative
 

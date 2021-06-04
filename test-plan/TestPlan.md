@@ -48,25 +48,30 @@
 
 ### 1.1 Purpose
 
-The purpose of the Iteration Test Plan is to gather all the information necessary to plan and control the test effort for a given iteration. It describes the approach to testing the software.
-This Test Plan for PlaceToBeer supports the following objectives:
+[comment]: <> (The purpose of the Iteration Test Plan is to gather all the information necessary to plan and control the test effort for a given iteration. It describes the approach to testing the software.)
 
-- Identifies the items that should be targeted by the tests.
-- Identifies the motivation for and ideas behind the test areas to be covered.
-- Outlines the testing approach that will be used.
-- Identifies the required resources and provides an estimate of the test efforts.
+[comment]: <> (This Test Plan for PlaceToBeer supports the following objectives:)
 
+[comment]: <> (- Identifies the items that should be targeted by the tests.)
+
+[comment]: <> (- Identifies the motivation for and ideas behind the test areas to be covered.)
+
+[comment]: <> (- Outlines the testing approach that will be used.)
+
+[comment]: <> (- Identifies the required resources and provides an estimate of the test efforts.)
+-tbd
 ### 1.2 Scope
 
-This test plan will cover tests assuring the functionality of the application's front end, back end and the communication between the two.
-This document shows the following types of testing:
+[comment]: <> (This test plan will cover tests assuring the functionality of the application's front end, back end and the communication between the two.)
+
+[comment]: <> (This document shows the following types of testing:)
 
 -tbd
 
 
 ### 1.3 Intended Audience
 
-This test plan is written primarily for internal documentation reasons. It is meant to provide orientation to the developers to work from and as a documentation to measure the fullfillment of quality requirements against.
+[comment]: <> (This test plan is written primarily for internal documentation reasons. It is meant to provide orientation to the developers to work from and as a documentation to measure the fullfillment of quality requirements against.)
 
 ### 1.4 Document Terminology and Acronyms
 

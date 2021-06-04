@@ -1,10 +1,13 @@
 ﻿# 1. Create proposal
 
 ## 1.1 Brief Description
+Create proposal allows any group member to create a proposal object (for that group) to be added to that group's rating list.
 
 # 2. Flow of Events
 ## 2.1 Basic Flow
-
+- user clicks on "add proposal" button
+- user fills in the proposal's name and chooses its Activity Type
+- user clicks on "Create" button to add a new proposal object to the rating list
 ### 2.1.1 Activity Diagram
 
 ### 2.1.2 Mock-up

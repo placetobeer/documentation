@@ -55,18 +55,19 @@ For the frontend we use Angular so no extra MVC-tools are needed.
 ![Overall use case diagramm](https://github.com/placetobeer/ptb-documentation/blob/master/PlaceToBeer%20UCD.png)
 ## 5. Logical View
 ### 5.1 Overview
+With the following logical view on the backend and frontend an understanding for the architecture should be created. The class diagrams don't represent all implemented classes. But should give an idea of the whole application.
 #### Frontend
-In the frontend we seperate between entities, components and services. The entities represent data objects. The components display these data objects and handle the there transitions. The services fill the objects with the current data of the backend or the user inputs. 
+In the frontend we seperate between entities, components, services and http-services. The entities represent data objects. The components display these data objects and handle the there transitions. The services fill the objects with the current data of the backend or the user inputs. With the help of the http-services the frontend can communicate with the backend.
 
 #### Backend
-todo: add description here
+The backend MVC is implemented with the help of Controllers, Services and Entites. To have leaner classes with less responisiblities, interactors and plugins are used as well. They handle the work which the Controller receives from the frontend and passes to the Service. 
 
 ### 5.2 Architecturally Significant Design Packages
 #### Frontend
-todo: add frontend class diagram here with marked state design pattern
+![frontend-architecture](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/SAD/frontend-architecture.png)
 
 #### Backend
-![MVC-with-classes](https://github.com/placetobeer/ptb-documentation/blob/master/SAD/MVC-Ptb.png)
+![backend-architecture](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/SAD/backend-architecture.png)
 ## 6. Process View
 (n/a)
 

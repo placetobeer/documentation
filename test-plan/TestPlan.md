@@ -1,4 +1,4 @@
-# Test plan
+﻿# Test plan
 
 - [Test plan](#test-plan)
     - [1. Introduction](#1-introduction)
@@ -237,17 +237,23 @@ Backend IDE test execution:
 -->
 tbd
 ## 7.2 Reporting on Test Coverage
-<!--
-For reporting our test coverage we use Jacoco and Codacy. 
 
-Code Test Coverage: [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/7fdcfeca10b94f4c9b6bc1a809669c2b)](https://www.codacy.com/app/CommonPlayground/CommonPlayground?utm_source=github.com&utm_medium=referral&utm_content=nilskre/CommonPlayground&utm_campaign=Badge_Coverage)
--->
-tbd
+In the backend we use Jacoco to generate the reports. In the frontend the reports are generated with Istanbul which is a tool of Karma. The reports are then sent to codacy which analyses them and creates a badge:
+[
+![Codacy Badge](https://app.codacy.com/project/badge/Coverage/28956f6679584cbf86e940ccba27ece5)](https://www.codacy.com/gh/placetobeer/ptb-backend/dashboard?utm_source=github.com&utm_medium=referral&utm_content=placetobeer/ptb-backend&utm_campaign=Badge_Coverage)
+
 ## 7.3 Perceived Quality Reports
-<!--
-The code quality tool is Codacy. [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7fdcfeca10b94f4c9b6bc1a809669c2b)](https://www.codacy.com/app/CommonPlayground/CommonPlayground?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=nilskre/CommonPlayground&amp;utm_campaign=Badge_Grade)
--->
-tbd
+The code quality is guaranteed through the tool codacy as well.
+
+ [![Codacy Badge](https://app.codacy.com/project/badge/Grade/28956f6679584cbf86e940ccba27ece5)](https://www.codacy.com/gh/placetobeer/ptb-backend/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=placetobeer/ptb-backend&amp;utm_campaign=Badge_Grade)
+ 
+**Metrics**
+During the automated deployment process codacy calculates different metrics:
+- cylomatic complexity
+- duplication
+
+Based on the results of the metrics the code is refactored regularly.
+
 ## 7.4 Incident Logs and Change Requests
 <!--
 We integrated the tools mentioned above into our GitHub pull request workflow. If a build fails this is directly visible in the PR. Furthermore the team is alerted by an email.
@@ -269,6 +275,7 @@ tbd
 4) Before the automated deployment the build and test stages are executed
 -->
 tbd
+
 ## 9. Environmental Needs
 
 ### 9.1 Base System Hardware
@@ -296,17 +303,16 @@ The following base software elements are required in the test environment for th
 -->
 tbd
 ### 9.3 Productivity and Support Tools
-<!--
+
 The following tools will be employed to support the test process for this Test Plan.
 
 | Tool Category or Type | Tool Brand Name                              |
 |-----------------------|----------------------------------------------|
 | Repository            | [github.com](http://github.com/)             |
 | Test Coverage Monitor | [codacy](https://app.codacy.com/)            |
-| CI/CD Service         | [Travis CI](http://travis-ci.org/)           |
+| CI/CD Service         | GitHub Actions   |
 | Metrics Tool          | [codacy](https://app.codacy.com/)            |
--->
-tbd
+
 ## 10. Responsibilities, Staffing, and Training Needs
 
 ### 10.1 People and Roles

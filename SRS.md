@@ -186,7 +186,8 @@ In the webapp you can create and manage groups with different users. All users s
 - Framework: Angular 2.0
 - Language: TypeScript
 - IDE: WebStorm
-- Testing: tbd
+- Testing: Jasmine Unit Tests
+- Test coverage report: Istanbul (Karma)
 
 
 
@@ -196,6 +197,7 @@ In the webapp you can create and manage groups with different users. All users s
 - Language: Kotlin
 - IDE: IntellJ
 - Testing: JUnit4
+- Test coverage report: Jacoco
 - Database: H2
 
 
@@ -203,8 +205,11 @@ In the webapp you can create and manage groups with different users. All users s
 #### 2.3.2 Projectmanagement
 
 - Project management tool: YouTrack
-- Version control: git and github
+- Version control: Git and GitHub
+- CI builduing tool: GitHub actions
+- Test coverage & code analysis: codacy
 - Organizing: Evernote
+- Presentation tool: ZOHO show
 
 
 ## 3. Specific Requirements

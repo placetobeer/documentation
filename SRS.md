@@ -236,8 +236,8 @@ Each user has the possibilty to create groups. The user can then invite already 
     This is the default role for all newly added users. They can modify the group name and invite users. Of course they can leave the group at any time.
 
 ##### UCS
-- [CRUD manage group](https://github.com/placetobeer/documentation/blob/master/manageGroup.md)
-- [delete group](deleteGroup.md)
+- [CRUD manage group](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/manage_group/manageGroup.md)
+- [delete group](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/manage_group_delete_group/deleteGroup.md)
 - [manage admin role](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/manage_group_memberships/manageAdminRole.md)
 - [kick member (update group membership)](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/manage_group_memberships/KickMember.md)
 - [CR(U)D manage group memberships](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/manage_group_memberships/manageGroupMemberships.md)

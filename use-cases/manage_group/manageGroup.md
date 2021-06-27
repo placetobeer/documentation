@@ -62,7 +62,7 @@ Feature: Create group
 ### 2.2.1 Activity Diagram
 ### 2.1.2 Mock-up
 ##### Group settings - owner view
-![Group settings - owner view](https://github.com/placetobeer/documentation/blob/master/use_cases/ui-mockups/groupsettings-owner.png)
+![Group settings - owner view](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/ui-mockups/groupsettings-owner.png)
 ##### Group settings - admin view
 ![Group settings - admin view](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/groupsettings-admin.png)
 ##### Group settings - member view

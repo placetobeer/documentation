@@ -287,13 +287,15 @@ These values are initial estimates. During the deployment phase and the testing 
 Once the development begins we will start to define clean code standarts, naming conventions and other measurements to preserve the supportability of our project.
 
 ### 3.6 Design Constraints
-tbd
+Our aim is to provide a modern and easy UI/UX. Therefore we are using the relatively new framework tailwind css. The design should match the "student-style".
+
+Beside that we want to provide a clean backend architecture of our application. That's why we are implementing a RESTful backend and frontend API. We are as well following the clean code rules.
 
 ### 3.7 Online User Documentation and Help System Requirements
-tbd
+On the startpage of our application the user gets information about the features of PlaceToBeer.
 
 ### 3.8 Purchased Components
-tbd
+There are no purchased components in our application. We are using public libraries like https://tailwindcomponents.com/components and customize these components. Or we are creating them by our own.
 
 ### 3.9 Interfaces
 
@@ -324,13 +326,13 @@ We plan to develop our Webapp based on test results using the current version of
 The web application will run on a single VM, with its own memory and hardware. Therefore, there are no exact interfaces to be defined.
 
 ### 3.10 Licensing Requirements
-tbd
+(n/a)
 
 ### 3.11 Legal, Copyright and other Notices
-tbd
+The logo is licensed to the PlaceToBeer Team and is only allowed to use for the application. We do not take responsibilty for any incorrect data or errors in the application.
 
 ### 3.12 Applicable Standards
-tbd
+We follow the common clean code standards and naming conventions.
 
 ## 4. Supporting Information
 Further information is provided in our [blog](https://placetobeer475840703.wordpress.com/) .

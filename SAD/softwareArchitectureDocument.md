@@ -80,7 +80,9 @@ The backend MVC is implemented with the help of Controllers, Services and Entite
 (n/a)
 ## 9. Data View
 #### Backend class diagram
-![Backend class diagram](https://github.com/placetobeer/ptb-documentation/blob/master/SAD/classDiagrams.png)
+![Backend class diagram](https://github.com/placetobeer/ptb-documentation/blob/master/SAD/classDiagram_backend.png)
+#### Frontend class diagram
+![Frontend class diagram](https://github.com/placetobeer/ptb-documentation/blob/master/SAD/classDiagram_frontend.png)
 #### Database schema
 ##### Entity Relationship Model
 ![ERM](https://github.com/placetobeer/ptb-documentation/blob/master/DBMS/groupSystem.png)

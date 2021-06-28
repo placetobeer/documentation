@@ -9,6 +9,7 @@ Create proposal allows any group member to create a proposal object (for that gr
 - user fills in the proposal's name and chooses its Activity Type
 - user clicks on "Create" button to add a new proposal object to the rating list
 ### 2.1.1 Activity Diagram
+![create-proposal-Activity-diagram](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/create_proposal/flow%20of%20events.png)
 
 ### 2.1.2 Mock-up
 ![create-proposal-popup](https://raw.githubusercontent.com/placetobeer/ptb-documentation/master/use-cases/ui-mockups/createProposal.png)

@@ -78,7 +78,7 @@ Feature: Create group
 - User fills the form with the person's email - the system checks if the email is already registered or the without an account
 - User clicks on "invite" button and will be sent back to the "group settings" page - the system sends an invitation email
 ### 2.3.1 Activity Diagram
-![Add Member](https://github.com/placetobeer/documentation/blob/master/use_cases/manage_group/add_member.png)
+![Add Member](https://github.com/placetobeer/ptb-documentation/blob/master/use-cases/manage_group_memberships/activityDiagrams/add_member.png)
 ### 2.3.2 Mock-up
 Mock-ups for group settings same as mock-ups for read view (compare 2.1.2).
 

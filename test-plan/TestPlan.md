@@ -272,9 +272,13 @@ tbd
 With the automated test execution in the CI/CD Pipeline we ensure to immediatly check if a functionality doesn't work any more when changes are made.
 
 ## 8. Testing Workflow
-Every team member does run all tests local in the IDE before commiting and
-Commit and Push triggers build and test exection in the CI/CD Pipeline
-Each PR triggers the pipeline (build and test)????
+<!--
+1) Local testing in the IDE
+2) Commit and Push triggers build and test exection in the CI/CD Pipeline
+3) Each PR triggers the pipeline (build and test)
+4) Before the automated deployment the build and test stages are executed
+-->
+Our automated testing workflow is achieved through Github Actions. These automatically create a test coverage report on every commit on the master branch. For the report creation we are using JaCoCo in the backend and Istanbul in the frontend. Those reports are then sent to codacy, where they get analyzed.
 
 ## 9. Environmental Needs
 

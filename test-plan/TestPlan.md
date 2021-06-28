@@ -48,36 +48,46 @@
 
 ### 1.1 Purpose
 
-[comment]: <> (The purpose of the Iteration Test Plan is to gather all the information necessary to plan and control the test effort for a given iteration. It describes the approach to testing the software.)
+This Test Plan's purpose is to deliver all the information necessary to steadily plan and supervise tests for the software. Here, different approaches to testing are described.
 
-[comment]: <> (This Test Plan for PlaceToBeer supports the following objectives:)
+The following objectives are covered:
 
-[comment]: <> (- Identifies the items that should be targeted by the tests.)
+- Describe what items should be tested and explain the reason for that.
 
-[comment]: <> (- Identifies the motivation for and ideas behind the test areas to be covered.)
+- Identifies the motivation for and ideas behind the test areas to be covered.
 
-[comment]: <> (- Outlines the testing approach that will be used.)
+- Outline what different ways are taken to test those areas.
 
-[comment]: <> (- Identifies the required resources and provides an estimate of the test efforts.)
+- Identifies the required resources and provides an estimate of the test efforts.
+
 -tbd
 ### 1.2 Scope
 
-[comment]: <> (This test plan will cover tests assuring the functionality of the application's front end, back end and the communication between the two.)
+This test plan will cover tests assuring the functionality of the application's front end, back end and the communication between the two.
 
-[comment]: <> (This document shows the following types of testing:)
+This document shows the following types of testing:
 
--tbd
+- API-Tests
+
+- Unit tests & Integration tests
+
+- User tests
 
 
 ### 1.3 Intended Audience
 
-[comment]: <> (This test plan is written primarily for internal documentation reasons. It is meant to provide orientation to the developers to work from and as a documentation to measure the fullfillment of quality requirements against.)
+Since this document's purpose is to provide orientation to the developers to work from and as a documentation to measure the fullfillment of quality requirements against, it is meant for internal use.
 
 ### 1.4 Document Terminology and Acronyms
 
 | Abbr | Abbreviation                        |
 |------|-------------------------------------|
 | tbd  | to be determined                    |
+| UC   | Use Case                            |
+| SRS  | Software Requirements Specification |
+| SAD  | Software Architecture Document      |
+| API  | Software Architecture Document      |
+| HTTP | Hypertext Transfer Protocol         |
 
 
 ### 1.5  References
@@ -104,121 +114,117 @@ n/a
 
 ### 2.1 Background
 
-[comment]: <> (Testing serves to ensure that the written code does what it is intended to do. It also prevents future code changes to break existing functionality unnoticed. In the context of integration it can also prevent broken software states to be merged into secured VC branches)
-tbd
+Testing is crucial to ensure keeping the quality of code up as well as making sure all the functionalities do work just as they are supposed to, after every implementation step.
 ### 2.2 Evaluation Mission
 
 [comment]: <> (Testing is a crucial phase in the development cycle. It is necessary in order to fix technical bugs and important functional problems. With TDD we define the test first and can fix bugs before they even occur.)
-tbd
+This test plan serves to describe what we have to do to prevent any failures during the implementation or alteration of code.
 ### 2.3 Test Motivators
 
 [comment]: <> (The tests are done to ensure quality and mitigate risks and fulfill functional requirements. Their purpose is to provide stability for our application.)
-tbd
+The reason these tests are done is to:
+- ensure quality
+- mitigate risks
+- fulfill requirements
 ## 3. Target Test Items
+Items for Testing:
+- SpringBoot - Backend
+- Angular - Frontend
 
 [comment]: <> (- Android frontend)
 
 [comment]: <> (- Server backend &#40;and APIs&#41;)
-tbd
+
 ## 4. Outline of Planned Tests
 
 ### 4.1 Outline of Test Inclusions
-<!--
-*Frontend: Android Client*:
+*Frontend: Angular*:
 
-- UI testing of views/fragments
-- Unit testing
+- Installation testing
 
 *Backend: Spring Boot Application*:
 
 - Unit testing
-- Integration testing
-- Api testing
-
-![Testing overview](./testing_overview.png)  
+- API testing (Integration testing)
 
 The tests themself will not be tested and will not account into code coverage.
--->
-tbd
+
 
 ### 4.2 Outline of Other Candidates for Potential Inclusion
 
 n/a
 
 ### 4.3 Outline of Test Exclusions
-<!--
-Because of time and resource constraints we will not do:
+We will not do:
 
+- UI tests
 - Stress test
 - Load/performance tests
 - Usability tests
 - any further tests
--->
-tbd
+
 ## 5. Test Approach
 
 ### 5.1 Testing Techniques and Types
 
 #### 5.1.1 Unit Testing
-<!--
-Unit testing ensures, that the tested sourcecode works as expected. Therefore small parts of the sourcecode are tested independently.
+
+Unit testing means, that small parts of the sourcecode are tested independently. This ensures, that the core code works properly.
+This does mostly apply to the backend.
 
 |                       | Description                                                         |
 |-----------------------|---------------------------------------------------------------------|
-|Technique Objective    | Ensure that the implemented code works as expected                  |
-|Technique              | Implement test methods using JUnit Framework (Frontend & Backend)   |
-|Oracles                | Test execution logs results to the command line, logs in CI/CD Tool (Travis) |
-|Required Tools         | JUnit 4 & 5 Dependencies in Frontend and Backend                    |
-|Success Criteria       | All tests pass. Coverage is above 10% (Frontend) / 60% (Backend)    |
-|                       | CI/CD Pipeline with test stages for Frontend and Backend: [Travis CI](https://travis-ci.com/nilskre/CommonPlayground)|
+|Technique Objective    | The implemented code should work as expected                  |
+|Technique              | Create test methods using JUnit and Mockito   |
+|Oracles                | Test execution logs results to the IDE's command line, logs in CI/CD Tool (Codacy) |
+|Required Tools         | JUnit Dependencies in Backend                    |
+|Success Criteria       | All tests pass. Coverage is above 10% (Frontend) / 80% (Backend)    |
+|                       | CI/CD Pipeline with test stages for Backend: [Codacy](https://app.codacy.com/gh/placetobeer/ptb-backend/dashboard?branch=master)|
 |Special Considerations | -                                                                   |
--->
-tbd
-#### 5.1.2 User Interface Testing
-<!--
-By UI testing the application is tested from the perspective of the user. The goal of UI testing is to ensure that the UI behaves as expected.
+
+#### 5.1.2 Installation Testing
+
+By Installation Testing a person, who has in no way got in contact with the project before, gegt's handed the project's current stand and tries to install and use it.
 
 |                       | Description                                                          |
 |-----------------------|----------------------------------------------------------------------|
-|Technique Objective    | Test application automated from the perspective of the user through UI Test |
-|Technique              | Writing Gherkin `.feature` files with clearly defined steps and the expected result. The test implementation of the steps use the Android Espresso library to serve the emulator. [Further information](https://commonplayground.wordpress.com/week-5-testing-with-cucumber//) |
-|Oracles                | Expect that the steps of the test are executed successfully and the UI behaves as planned. Test execution logs results to the command line, logs in CI/CD Tool (Travis) |
-|Required Tools         | Dependencies of Cucumber and Espresso (official Android UI test library) and an Implementation of a test runner based on JUnit 4 to execute UI tests with Cucumber and Espresso |
-|Success Criteria       | All UI tests pass.
-|                       | CI/CD Pipeline with test stages for Frontend and Backend: [Travis CI](https://travis-ci.com/nilskre/CommonPlayground)   |
+|Technique Objective    | Test the frontend composition and logical connections by an external user |
+|Technique              | Creating an installation guide and test cases which cover the critical functionalities of the project - add what is expected to happen|
+|Oracles                | Save Protocols/ filled out Formulars of users |
+|Required Tools         | MS Forms |
+|Success Criteria       | All test cases are marked as "works"
 |Special Considerations | - |
--->
-tbd
+
 #### 5.1.3 Integration Testing (API Testing)
-<!--
-Api Testing is part of integration testing. Integration tests test multiple modules of an application together. The main goal of Api testing is to ensure, that the provided Apis of the Backend behave as expected.
+
+API testing is a part of integration Testing as it tests multiple components of the backends together. Here we make sure the communication from Backend-Server to the frontend works as expected.
 
 |                       | Description                                                          |
 |-----------------------|----------------------------------------------------------------------|
-|Technique Objective    | Test the provided Apis with Cucumber                                 |
-|Technique              | For every meaningful api a Gherkin `.feature` exists and the steps are implemented.  |            |
-|Oracles                | Test execution logs results to the command line, Logs in CI/CD Tool (Travis) |
-|Required Tools         | JUnit, Cucumber, Rest assured, Hamcrest                                     |
-|Success Criteria       | All tests pass. Coverage is above 60%                                |
-|                       | CI/CD Pipeline with test stages for Frontend and Backend: [Travis CI](https://travis-ci.com/nilskre/CommonPlayground) |
+|Technique Objective    | Test the provided Apis using Swagger                                 |
+|Technique              | We can check out every meaningful api with with test data and see if the http messages contain the expected information   |           
+|Oracles                | Backend gets filled with (fake) mockup data and check if the result gets simulated correctly in the Swagger Overview |
+|Required Tools         | Swagger                                     |
+|Success Criteria       | All tests pass.                               | |
 |Special Considerations | -                                                                    |
--->
-tbd
+
 ## 6. Entry and Exit Criteria
 
 ### 6.1 Test Plan
 
 #### 6.1.1 Test Plan Entry Criteria
 
-n/a
+Pushing new commits to gitHub on the master branch in the backend will trigger the CI/CD pipeline
 
 #### 6.1.2 Test Plan Exit Criteria
 
-n/a
+All tests pass without an exception
 
 ## 7. Deliverables
 
 ## 7.1 Test Evaluation Summaries
+
+
 <!--
 The project owns a certain amount of tests in the Frontend and Backend. Each pushed commit triggers our CI/CD Pipeline, which builds the application and executes the tests. Furthermore a code analysis with Codacy is triggered. We use a monorepo which includes the docs and the sourcecode for our Backend and Frontend. That´s why we have one CI/CD Pipeline for our whole project. 
 
@@ -263,45 +269,34 @@ The screenshot shows the integration:
 -->
 tbd
 ## 7.5 Smoke Test Suite and Supporting Test Scripts
-<!--
-The automated test execution in our CI/CD Pipeline enables regression testing. With this approach it is clearly visible when changes break existing functions and affect the correct behaviour of the application.
--->
-tbd
+With the automated test execution in the CI/CD Pipeline we ensure to immediatly check if a functionality doesn't work any more when changes are made.
+
 ## 8. Testing Workflow
-<!--
-1) Local testing in the IDE
-2) Commit and Push triggers build and test exection in the CI/CD Pipeline
-3) Each PR triggers the pipeline (build and test)
-4) Before the automated deployment the build and test stages are executed
--->
-tbd
+Every team member does run all tests local in the IDE before commiting and
+Commit and Push triggers build and test exection in the CI/CD Pipeline
+Each PR triggers the pipeline (build and test)????
 
 ## 9. Environmental Needs
 
 ### 9.1 Base System Hardware
-<!--
+
 The following table sets forth the system resources for the test effort presented in this Test Plan.
 
 | Resource              | Quantity | Name and Type                |
 |-----------------------|:--------:|------------------------------|
-| CI/CD server          |    1     | Travis CI Cloud              |
-| local test machine    |    1     | notebook (Inga, Celina, Denis, Nils)       |
-| Android test device   |    1     | Android device (Inga, Celina, Denis, Nils) |
--->
-tbd
+| CI/CD server          |    1     | Codacy Cloud                 |
+| local test machine    |    1     | Windows PC        |
+
 ### 9.2 Base Software Elements in the Test Environment
-<!--
+
 The following base software elements are required in the test environment for this Test Plan.
 
 | Software Element Name |  Type and Other Notes                        |
 |-----------------------|----------------------------------------------|
-| Android Studio        | Test Runner / IDE                            |
 | IntelliJ              | Test Runner / IDE                            |
-| JUnit 4 & 5           | Unit testing library                         |
-| Espresso              | UI testing library                           |
-| Cucumber              | human readable test definitions              |
--->
-tbd
+| JUnit                 | Unit testing library                         |
+| Swagger               | API Documentation/ Testing Tool              |
+
 ### 9.3 Productivity and Support Tools
 
 The following tools will be employed to support the test process for this Test Plan.
@@ -316,14 +311,15 @@ The following tools will be employed to support the test process for this Test P
 ## 10. Responsibilities, Staffing, and Training Needs
 
 ### 10.1 People and Roles
-<!--
+
 | Role          | Person Assigned |  Specific Responsibilities or Comments |
 |---------------|:--------------:|----------------------------------------|
-| Test Manager | Denis, Inga | Provides management oversight. |
-| Test Designer | Denis, Celina | Defines the technical approach to the implementation of the test effort. |
-| Test System Administrator | Nils | Ensures test environment and assets are managed and maintained. |
--->
-tbd
+| Test Manager | Tom  | Keeps track of the testing processes |
+
+[comment]: <> (| Test Designer | Denis, Celina | Defines the technical approach to the implementation of the test effort. |)
+
+[comment]: <> (| Test System Administrator | Nils | Ensures test environment and assets are managed and maintained. |)
+
 ### 10.2 Staffing and Training Needs
 
 n/a
@@ -333,14 +329,17 @@ n/a
 We want to keep over 80% code coverage.
 
 ## 12. Risks, Dependencies, Assumptions, and Constraints
-<!--
+
 | Risk | Mitigation Strategy | Contingency (Risk is realized) |
 |------|---------------------|--------------------------------|
-| Code has lots of side effects | Refactor code (Clean Code principles) | publish new refactored tests |
-| Test Runner is not able to execute tests | Use standard libraries which include working Test Runner | fix test execution configuration |
-| UI tests fail | Refactor test | publish refactored test and restart |
--->
-tbd
+|Fundamental issues in code base|code review; early and regularly refactoring; pair programming|Check in logs or repository to fix bugs|
+
+[comment]: <> (| Code has lots of side effects | Refactor code &#40;Clean Code principles&#41; | publish new refactored tests |)
+
+[comment]: <> (| Test Runner is not able to execute tests | Use standard libraries which include working Test Runner | fix test execution configuration |)
+
+[comment]: <> (| UI tests fail | Refactor test | publish refactored test and restart |)
+
 ## 13. Management Process and Procedures
 
 n/a

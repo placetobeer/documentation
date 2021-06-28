@@ -274,7 +274,7 @@ tbd
 3) Each PR triggers the pipeline (build and test)
 4) Before the automated deployment the build and test stages are executed
 -->
-tbd
+Our automated testing workflow is achieved through Github Actions. These automatically create a test coverage report on every commit on the master branch. For the report creation we are using JaCoCo in the backend and Istanbul in the frontend. Those reports are then sent to codacy, where they get analyzed.
 
 ## 9. Environmental Needs
 

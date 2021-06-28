@@ -60,7 +60,6 @@ The following objectives are covered:
 
 - Identifies the required resources and provides an estimate of the test efforts.
 
--tbd
 ### 1.2 Scope
 
 This test plan will cover tests assuring the functionality of the application's front end, back end and the communication between the two.
@@ -241,7 +240,7 @@ Frontend IDE test execution:
 Backend IDE test execution:  
 ![Backend IDE test execution](./backend_test_execution.png)
 -->
-tbd
+
 ## 7.2 Reporting on Test Coverage
 
 In the backend we use Jacoco to generate the reports. In the frontend the reports are generated with Istanbul which is a tool of Karma. The reports are then sent to codacy which analyses them and creates a badge:
